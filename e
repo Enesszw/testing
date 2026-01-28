@@ -1104,7 +1104,7 @@ do
 
                         local Outline = Menu.Draw("Frame", { Parent = TabFrame, Size = NewUDim2(1, 0, 0, Fill and TabFrame.AbsoluteSize.Y or Size), BackgroundColor3 = Theme.B, BorderColor3 = Theme.C })
 
-                        local Inline = Menu.Draw("ScrollingFrame", { Parent = Outline, Size = NewUDim2(1, 0, 1, 0), BorderSizePixel = 0, BackgroundColor3 = Theme.B, ScrollingEnabled = false, CanvasSize = EmptyUDim2, ScrollBarThickness = 1, VerticalScrollBarInset = "ScrollBar", ClipsDescendants = false, ScrollBarImageColor3 = Theme.Accent, MidImage = "rbxassetid://7783554086", TopImage = "rbxassetid://7783554086", BottomImage = "rbxassetid://7783554086" })
+                        local Inline = Menu.Draw("ScrollingFrame", { Parent = Outline, Size = NewUDim2(1, 0, 1, 0), BorderSizePixel = 0, BackgroundColor3 = Theme.B, ScrollingEnabled = false, CanvasSize = EmptyUDim2, ScrollBarThickness = 1, VerticalScrollBarInset = "ScrollBar", ClipsDescendants = true, ScrollBarImageColor3 = Theme.Accent, MidImage = "rbxassetid://7783554086", TopImage = "rbxassetid://7783554086", BottomImage = "rbxassetid://7783554086" })
 
                         local Gradient = Menu.Draw("Frame", { Parent = Outline, Size = NewUDim2(1, -2, 0, 15), BackgroundColor3 = Theme.B, BorderSizePixel = 0, ZIndex = 20000, Visible = false })
                         local Gradient2 = Menu.Draw("Frame", { Parent = Outline, Position = NewUDim2(0, 0, 1, -10), Size = NewUDim2(1, -2, 0, 10), BackgroundColor3 = Theme.B, BorderSizePixel = 0, ZIndex = 20000, Visible = false })
@@ -1382,7 +1382,7 @@ do
                                 local AbsolutePosition = Dropdown.Outline.AbsolutePosition
 
                                 local Frame = Menu.Draw("Frame", {Parent = Menu.Overlay, ZIndex = 30000, Position = NewUDim2(0, AbsolutePosition.X + 1, 0, AbsolutePosition.Y + 21), Size = NewUDim2(0, Dropdown.Outline.AbsoluteSize.X, 0, 0), BackgroundColor3 = Theme.A, BackgroundTransparency = 1, BorderSizePixel = 0})
-                                local Inner = Menu.Draw("Frame", {Parent = Frame, ZIndex = Frame.ZIndex + 1, Position = NewUDim2(0, 1, 0, 1), Size = NewUDim2(1, -2, 1, -2), BackgroundColor3 = Theme.White, BorderSizePixel = 0, ClipsDescendants = false})
+                                local Inner = Menu.Draw("Frame", {Parent = Frame, ZIndex = Frame.ZIndex + 1, Position = NewUDim2(0, 1, 0, 1), Size = NewUDim2(1, -2, 1, -2), BackgroundColor3 = Theme.White, BorderSizePixel = 0, ClipsDescendants = true})
 
                                 Menu.Draw("UIGradient", {Parent = Inner, Color = NewColorSequence(NewRGB(15, 15, 15), NewRGB(23, 23, 23)), Rotation = -90})
 
@@ -1730,7 +1730,7 @@ do
 
                         local Inline = Menu.Draw("Frame", {Parent = Outline, Position = NewUDim2(0, 1, 0, 1), Size = NewUDim2(1, -2, 1, -2), BackgroundColor3 = Theme.White, BorderSizePixel = 0})
 
-                        local Box = Menu.Draw("TextBox", {Parent = Inline, Position = EmptyUDim2, Size = NewUDim2(1, 0, 1, 0), BackgroundTransparency = 1, BorderSizePixel = 0, PlaceholderText = PlaceholderText, Text = Default, ClipsDescendants = false})
+                        local Box = Menu.Draw("TextBox", {Parent = Inline, Position = EmptyUDim2, Size = NewUDim2(1, 0, 1, 0), BackgroundTransparency = 1, BorderSizePixel = 0, PlaceholderText = PlaceholderText, Text = Default, ClipsDescendants = true})
 
                         Menu.Draw("UIGradient", {Parent = Inline, Color = NewColorSequence(NewRGB(15, 15, 15), NewRGB(23, 23, 23)), Rotation = -90})
 
